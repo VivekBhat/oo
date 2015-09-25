@@ -1,0 +1,29 @@
+<h2>Users list</h2>
+<table border ="1" cellpadding="10">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>User Type</th>
+    <th colspan="2">Operations</th>
+  </tr>
+ 
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.usertype %></td>
+
+      <td><%= link_to 'Edit', role_user_path(user) %></td>
+	<% if user.email != "superadmin@ncsu.edu" %>
+      <td><%= link_to 'Delete', user_path(user),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+  	<% end %>
+    </tr>
+
+  <% end %>
+</table>
+<br>
+User roles:<br>
+1 Admin <br>
+2 Library member

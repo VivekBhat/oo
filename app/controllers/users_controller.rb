@@ -1,12 +1,13 @@
 class UsersController < ApplicationController
-  
+  layout "nav", only: [:edit,:show,:index,:role,:updaterole]
+
   def show
     @user = User.find(params[:id])
   end
 
-  def signup
+  def index
+  @users = User.all 
   end
-  
   def new
    @user = User.new
   end
@@ -18,6 +19,9 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in @user
+      ActiveRecord::Base.transaction do
+        @user.update_attributes(:usertype=>2)
+      end
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
@@ -28,14 +32,35 @@ class UsersController < ApplicationController
   def edit
     @user = User.find(params[:id])
   end
+
+  def role
+    @user = User.find(params[:id])
+  end
   
+  def destroy
+  @user = User.find(params[:id])
+  @user.destroy
+ 
+  redirect_to users_path
+end
+
   def update
     @user = User.find(params[:id])
-    if @user.update_attributes(user_params)
-      flash[:success] = "Profile updated"
+    if @user.update(user_params)
+      flash[:success] = "Changes have been made successfully"
       redirect_to @user
     else
       render 'edit'
+    end
+  end
+
+    def updaterole
+    @user = User.find(params[:id])
+    if @user.update(user_params)
+      flash[:success] = "Changes have been made successfully"
+      redirect_to @user
+    else
+      render 'role'
     end
   end
 
@@ -43,6 +68,6 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
+                                   :password_confirmation,:usertype)
     end
 end

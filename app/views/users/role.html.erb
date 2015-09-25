@@ -16,6 +16,10 @@
       <%= f.label :password_confirmation, "Re-enter password" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %><br>
 
+    <%= f.label :UserType %>
+    <%#= f.text_field :usertype%> 
+    <%= f.select :usertype, [['Admin','1'],['Library Member','2']] %><br><br>
+
       <%= f.submit "Save changes", class: "btn btn-primary" %>
     <% end %>
   </div>

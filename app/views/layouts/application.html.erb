@@ -2,7 +2,7 @@
 <html>
 <html>
 <head>
-  <title>LibSys</title>
+  <title>Library Management System</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -12,40 +12,47 @@
     <![endif]-->
 </head>
 <body>
+<h1><center>LibSys</center></h1>
+<h2>
+  <center>Welcome to the Library management system.</center>
+<br><br><br><br>
+</h2>
  <header class="">
       <div class="container">
-        <nav>
+        <nav><center>
           <ul class="">
-            <li><%= link_to "Home", root_path %></li>
-            <li><%= link_to "Help", help_path %></li>
             <% if logged_in? %>
-          <li><%= link_to "Users", '#' %></li>
+          <!--<li><%= link_to "Users", '#' %></li>-->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               Account <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
-              <li class="divider"></li>
-              <li>
-                <%= link_to "Log out", logout_path, method: "delete" %>
-              </li>
+              You are already logged in. <%= link_to "Click here to proceed", current_user %>
             </ul>
           </li>
         <% else %>
-          <li><%= link_to "Log in", login_path %></li>
+          <h3>Already a user?<%= link_to "Log in", login_path %></h3>
         <% end %>
           </ul>
-        </nav>
+        </center></nav>
       </div>
     </header>
     <div class="container">
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
-      <%= yield %>
-      <%= debug(params) if Rails.env.development? %>
+	<div id="main">
+
+	<%= yield %>  
+	</div>      
     </div>
+<div id="note">
+"I must say I find television very educational. The minute somebody turns it on, I go to the library and read a good book." ~ Groucho Marx
+<br><br>
+</div>
+<div id="footer">
+Developed by Matrika, Samrudhi, Shivam
+</div>
   </body>
 </html>
