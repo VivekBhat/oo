@@ -31,9 +31,8 @@
 #footer {
     color:black;
     width:100%;
-    /*position:absolute;
-    bottom:0;*/
-    vertical-align: bottom;
+    position:absolute;
+    bottom:0;
     clear:both;
     text-align:center;
     padding:5px;
