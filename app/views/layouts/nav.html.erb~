@@ -22,6 +22,9 @@
 <%= link_to "Logout", logout_path, method: "delete" %><br>
 </div>
 <%= yield %>
+<div id="footer">
+Developed by Matrika, Samrudhi, Shivam
+</div>
   </div>
 
 </body>
