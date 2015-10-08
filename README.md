@@ -154,6 +154,36 @@ The admin can search for a book using various parameters. Search in a checkout h
 **(D) Admin cannot delete a user who has a book checked out.**
 	
 **4) Extra Credit Features:**
+
+**(A) Can a user sign up to receive an email when a book becomes available.**
+	
+	Click on request a book a book. 
+	
+	When the book becomes available he or she should get a mail, provided a valid email id is provided.
+	
+Steps to get an email notification:
+
+1) Signin or have an existing account in the system with a valid email address.
+
+2) Request a checked out book. The confirmation message will be shown as "Mail sent" but a mail will not be received.
+
+3) Now if the user or the admin returns the book and its status becomes available, the user will receive a mail via mandrill.
+
+**(B) Library member can add a suggestion of a book:**
+
+	Click on Book suggestions and then New book.
+
+**(C) Admin view or approve new suggestion:**
+	
+	An admin can view a suggestion as well as delete it. 
+
+**(D) Admin edit suggestion:**
+
+	An admin can edit a suggestion. An edited suggestion will be added to the book database. 
+
+**(E) Suggested books seen after approval:**
+	
+	The book with the ISBN set by the admin is put in the existing repository of books. 
 	
 Subsquent Steps/ Bugs:
 
@@ -162,6 +192,8 @@ Subsquent Steps/ Bugs:
 2) The add a book form shows checkout as an option.
 
 3) Search in a checkout history does not work for ISBN.
+
+Team Members: mrohatg2@ncsu.edu, ssharm17@ncsu.edu, sgulati2@ncsu.edu
 
 	
 	
