@@ -61,6 +61,18 @@ The Features supported as per the given rubric:
 	
 	An admin cannot revoke superadmin privilege. 
 	
+While testing the application, the steps that should be followed to create a new admin are:
+
+1) Sign up as the user. 
+
+2) Sign out. 
+
+3) Log in as the superadmin.
+
+4) Give the user of step 1 admin privileges. 
+
+
+	
 	
 	
 	
