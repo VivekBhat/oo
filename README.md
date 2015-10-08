@@ -1,9 +1,9 @@
 
-CSC 517 - OODD
+**CSC 517 - OODD**
 
-Program 1 - Ruby on Rails Application - LibSys
+**Program 1 - Ruby on Rails Application - LibSys**
 
-The application is  currently hosted at: https://frozen-badlands-7977.herokuapp.com
+The application is currently hosted at: https://frozen-badlands-7977.herokuapp.com
 
 The old application is hosted at: libsys.herokuapp.com
 
@@ -122,6 +122,12 @@ The admin can search for a book using various parameters. Search in a checkout h
 	Click on book checkout/return to view all books in the system.
 	
 	The user can search for a book using title, author, description, Status (Available, Checked Out). Search using ISBN is working locally not on heroku. 
+	
+**(D) Library member view details of a book:**
+
+	Click on the show link after clicking on book checkout/return in the left menu. 
+	
+
 	
 	
 Subsquent Steps/ Bugs:
