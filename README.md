@@ -74,6 +74,28 @@ While testing the application, the steps that should be followed to create a new
 **(E) View list of other admins, view details except password, delete other admins except himself and superadmin:**
 
 	Click on the user management link. 
+	
+**(F) Add a book:**
+	
+	Click on the manage books link. 
+	
+	Click on the new book link below. 
+	
+**(G) Edit book details:**
+	
+	Click on the edit link.
+	
+**(H) View details of a book:** 
+	
+	Click on the show link.
+
+**(I) Can an admin checkout a book of someone else:**
+
+	Click on the checkout link.
+	
+Subsquent Steps/ Bugs:
+
+1) The email field in checkout and return on behalf of a user will work if we put different email ids. 
 
 	
 	
