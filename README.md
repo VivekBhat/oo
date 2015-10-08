@@ -193,6 +193,8 @@ Subsquent Steps/ Bugs:
 
 3) Search in a checkout history does not work for ISBN.
 
+Team Members: mrohatg2@ncsu.edu, ssharm17@ncsu.edu, sgulati2@ncsu.edu
+
 	
 	
 	
