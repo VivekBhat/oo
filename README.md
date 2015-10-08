@@ -169,7 +169,21 @@ Steps to get an email notification:
 
 3) Now if the user or the admin returns the book and its status becomes available, the user will receive a mail via mandrill.
 
-**(B) Library member can add a suggestion:**
+**(B) Library member can add a suggestion of a book:**
+
+	Click on Book suggestions and then New book.
+
+**(C) Admin view or approve new suggestion:**
+	
+	An admin can view a suggestion as well as delete it. 
+
+**(D) Admin edit suggestion:**
+
+	An admin can edit a suggestion. An edited suggestion will be added to the book database. 
+
+**(E) Suggested books seen after approval:**
+	
+	The book with the ISBN set by the admin is put in the existing repository of books. 
 	
 Subsquent Steps/ Bugs:
 
