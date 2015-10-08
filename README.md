@@ -51,7 +51,7 @@ The Features supported as per the given rubric:
 	
 	Click on the Update Profile link on the portal page.
 
-**=> PLEASE NOTE: For creating new admins, we have provided the option to the superadmin to assign/revoke admin privileges instead of creating a new form to create a new admin. **
+**PLEASE NOTE: For creating new admins, we have provided the option to the superadmin to assign/revoke admin privileges instead of creating a new form to create a new admin.**
 
 
 
