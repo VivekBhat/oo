@@ -106,6 +106,23 @@ There are two scenarios here:
 The admin can search for a book using various parameters. Search in a checkout history does not work for ISBN. 
 
 **2) Library Member Functions:**
+
+**(A) Sign up to be library member:**
+
+	Click on the sign up link on the home page.
+	
+**(B) Log-in log out after signup:**
+
+	Click on the log out link in the left menu when logged-in.
+	
+	Click on log in link on the home page.
+	
+**(C) Search for a book:**
+
+	Click on book checkout/return to view all books in the system.
+	
+	The user can search for a book using title, author, description, Status (Available, Checked Out). Search using ISBN is working locally not on heroku. 
+	
 	
 Subsquent Steps/ Bugs:
 
