@@ -153,7 +153,7 @@ The admin can search for a book using various parameters. Search in a checkout h
 
 **(D) Admin cannot delete a user who has a book checked out.**
 	
-
+**4) Extra Credit Features:**
 	
 Subsquent Steps/ Bugs:
 
