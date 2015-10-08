@@ -127,7 +127,13 @@ The admin can search for a book using various parameters. Search in a checkout h
 
 	Click on the show link after clicking on book checkout/return in the left menu. 
 	
+**(E) Library member checkout/return details of a book:**
 
+	Click on checkout/return of the book. 
+
+**(F) Library member view his(her) own checkout history:**
+
+	Click on checkout history in the left menu. 
 	
 	
 Subsquent Steps/ Bugs:
