@@ -35,6 +35,16 @@ Superuser details:
 
 The Features supported as per the given rubric:
 
+1) Admin Functions: 
+
+=> The superadmin can log in, log out, and update his/her profile. The details given above will work. In case they don't please inform one of the contributors, we will reset the db again.
+
+=> For creating new admins, we have provided the option to the superadmin to assign/revoke admin privileges instead of creating a new form to create a new admin. 
+
+
+
+
+
 
 
 
