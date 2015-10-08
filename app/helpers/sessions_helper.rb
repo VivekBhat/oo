@@ -4,6 +4,7 @@ module SessionsHelper
     session[:user_id] = user.id
     session[:user_email] = user.email
     session[:user_name] = user.name
+
   end
  
   # Returns the current logged-in user (if any).

@@ -20,9 +20,9 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       ActiveRecord::Base.transaction do
-        @user.update_attributes(:usertype=>2)
+        @user.update_attributes(:usertype=>2, :check=> 0)
       end
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:success] = "Welcome to LibSys!"
       redirect_to @user
     else
       render 'new'
@@ -42,7 +42,17 @@ class UsersController < ApplicationController
   @user.destroy
  
   redirect_to users_path
-end
+  end
+
+  def makeadmin
+    @user = User.find(params[:id])
+    if @user.usertype == 2
+      @user.update_attribute(:usertype, 1)
+    elsif @user.usertype == 1
+      @user.update_attribute(:usertype, 2)
+    end
+    redirect_to users_path
+  end
 
   def update
     @user = User.find(params[:id])
@@ -53,21 +63,27 @@ end
       render 'edit'
     end
   end
-
+#update any user's name
     def updaterole
     @user = User.find(params[:id])
-    if @user.update(user_params)
+    if @user.update_attribute(:name, params[:user][:name])
       flash[:success] = "Changes have been made successfully"
       redirect_to @user
     else
-      render 'role'
+      render 'edit'
     end
+
   end
+
+
+#adding mail functionality here
+
+
 
   private
 
     def user_params
       params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation,:usertype)
+                                   :password_confirmation,:usertype,:check, :want_book,:ISBN)
     end
 end

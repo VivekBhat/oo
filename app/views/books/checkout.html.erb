@@ -1,5 +1,6 @@
-<h2> Checkout a book</h2>
-<%= form_for :book, :url => { :action => "checkoutupdate" }, :html => { :method => :post } do |f| %>
+<h2> Book checkout and return </h2>
+<% if session[:user_usertype] == 2 %>
+<%= form_for :book, :url => { :action => "checkoutupdate" }, :html => { :method => :post }  do |f| %>
 
  <p>
     <%= f.label :ISBN %><br>
@@ -20,12 +21,32 @@
   </p>
    <p>
     <%= f.label :"Action" %><br>
-    <%#= f.text_field :status, :value => "Available" %> 
-    <%= f.select :status, [['Return','Available'],['Check out','Checked Out']] %>
+      <% if @book.status == "Checked Out" %>
+      <%= f.select :status, [['Return','Available']] %>
+  <% elsif @book.status == "Available" %>
+  <%= f.select :status, [['Check out','Checked Out']] %>
+  <% end %>
+    <%#= f.select :status, [['Return','Available'],['Check out','Checked Out']] %>
   </p>
   <p>
-    <%= f.submit :"Proceed" %>
+  <%#= f.select("uname", "ISBN", Book.all.collect {|u| [ u.title, u.ISBN ] }, { include_blank: true }) %>
+  </p>
+  <p>
+
+   <%= f.submit :"Proceed" %>
   </p>
 <% end %>
+<% else %>
 
+	<%= form_tag :url => { :action => "checkoutUserupdate" }, :html => { :method => :post } do %>
+		<%= email_field_tag 'Name' %>
+		<%= submit_tag "Proceed" %>
+	<% end %>
+	<div class="container">
+      		<% flash.each do |key, value| %>
+        	<div class="alert alert-<%= key %>"><%= value %></div>
+      		<% end %>
+      		<%= yield %>
+    	</div>
+<% end %>
 <%= link_to 'Back', books_path %>
