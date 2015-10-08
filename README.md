@@ -154,6 +154,10 @@ The admin can search for a book using various parameters. Search in a checkout h
 **(D) Admin cannot delete a user who has a book checked out.**
 	
 **4) Extra Credit Features:**
+
+**(A) Can a user sign up to receive an email when a book becomes available.**
+	
+	Click on request a book a book. 
 	
 Subsquent Steps/ Bugs:
 
