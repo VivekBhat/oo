@@ -167,7 +167,9 @@ Steps to get an email notification:
 
 2) Request a checked out book. The confirmation message will be shown as "Mail sent" but a mail will not be received.
 
-3) Now if the user or the admin returns the book and its status becomes available. 
+3) Now if the user or the admin returns the book and its status becomes available, the user will receive a mail via mandrill.
+
+**(B) Library member can add a suggestion:**
 	
 Subsquent Steps/ Bugs:
 
