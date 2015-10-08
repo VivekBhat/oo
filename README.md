@@ -95,7 +95,7 @@ Please Note: The form shows checkout as an option too which should not be select
 
 	Click on the checkout link.
 	
-**(G) View checkout history:
+**(G) View checkout history:**
 
 There are two scenarios here:
 	
