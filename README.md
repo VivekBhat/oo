@@ -80,6 +80,8 @@ While testing the application, the steps that should be followed to create a new
 	Click on the manage books link. 
 	
 	Click on the new book link below. 
+
+Please Note: The form shows checkout as an option too which should not be selected.
 	
 **(G) Edit book details:**
 	
@@ -99,7 +101,11 @@ There are two scenarios here:
 	
 	A admin can view the complete checkout history of the system.
 	
+	A user can view only his own checkout history.
 	
+The admin can search for a book using various parameters. Search in a checkout history does not work for ISBN. 
+
+
 	
 Subsquent Steps/ Bugs:
 
