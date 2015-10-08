@@ -12,14 +12,14 @@ For accessing the project for the first time,
 There are two options:
 
 
-1) Sign up as a library member.
+**1) Sign up as a library member.**
 
 => The name, email, password, confirmation should be entered. 
 
 => We have currently set the minimum password length as 2. 
 
 
-2) Log in as the superadmin. 
+**2) Log in as the superadmin.**
 
 Superuser details:
 
@@ -35,11 +35,23 @@ Superuser details:
 
 The Features supported as per the given rubric:
 
-1) Admin Functions: 
+**1) Admin Functions:**
 
-=> The superadmin can log in, log out, and update his/her profile. The details given above will work. In case they don't please inform one of the contributors, we will reset the db again.
+=> The **superadmin** can log in, log out, and update his/her profile. The details given above will work. In case they don't please inform one of the contributors, we will reset the db again.
 
-=> For creating new admins, we have provided the option to the superadmin to assign/revoke admin privileges instead of creating a new form to create a new admin. 
+**(A) To log in as superadmin:**
+
+	Click on the Log In link on the home page.
+	
+**(B) To log out:**
+	
+	Click on the Log Out link on the portal page.
+	
+**(B) To log out:**
+	
+	Click on the Update Profile link on the portal page.
+
+**=> PLEASE NOTE: For creating new admins, we have provided the option to the superadmin to assign/revoke admin privileges instead of creating a new form to create a new admin. **
 
 
 
