@@ -159,6 +159,16 @@ The admin can search for a book using various parameters. Search in a checkout h
 	
 	Click on request a book a book. 
 	
+	When the book becomes available he or she should get a mail, provided a valid email id is provided.
+	
+Steps to get an email notification:
+
+1) Signin or have an existing account in the system with a valid email address.
+
+2) Request a checked out book. The confirmation message will be shown as "Mail sent" but a mail will not be received.
+
+3) Now if the user or the admin returns the book and its status becomes available. 
+	
 Subsquent Steps/ Bugs:
 
 1) The email field in checkout and return on behalf of a user will work if we put different email ids. 
