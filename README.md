@@ -71,7 +71,7 @@ While testing the application, the steps that should be followed to create a new
 
 4) Give the user of step 1 admin privileges. 
 
-**(E) View list of other admins as a superadmin or admin:**
+**(E) View list of other admins, view details except password, delete other admins except himself and superadmin:**
 
 	Click on the user management link. 
 
