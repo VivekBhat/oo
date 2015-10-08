@@ -149,6 +149,10 @@ The admin can search for a book using various parameters. Search in a checkout h
 	
 	Admin can delete a user who has no book checked out. The deleted user's checkout history will not be deleted from the checkout history table.
 	
+**(C) Admin cannot delete a book which is currently checked out.**
+
+**(D) Admin cannot delete a user who has a book checked out.**
+	
 
 	
 Subsquent Steps/ Bugs:
