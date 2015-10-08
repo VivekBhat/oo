@@ -47,11 +47,25 @@ The Features supported as per the given rubric:
 	
 	Click on the Log Out link on the portal page.
 	
-**(B) To log out:**
+**(C) To update profile:**
 	
 	Click on the Update Profile link on the portal page.
 
-**PLEASE NOTE: For creating new admins, we have provided the option to the superadmin to assign/revoke admin privileges instead of creating a new form to create a new admin.**
+**PLEASE NOTE: For creating new admins, we have provided the option to the superadmin to assign/revoke admin privileges instead of providing a new form to create a new admin.**
+
+**(D) Create new admins:**
+	
+	Click on User Management (this link will be displayed only in admins and superadmin accounts).
+	
+	The superadmin or any other existing admins can assign/revoke the admin privilege for a user. 
+	
+	An admin cannot revoke superadmin privilege. 
+	
+	
+	
+	
+
+
 
 
 
