@@ -7,16 +7,20 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
-  get 'logout' => 'sessions#destroy'
+
   resources :histories
  
   resources :users
+  
+  resources :suggestions
+
   resources :users do
   member do
     get 'role'
     get 'updaterole'
     put 'updaterole'
     patch 'updaterole'
+    post 'makeadmin'
   end
 end
   resources :books
@@ -24,9 +28,13 @@ end
 resources :books do
   member do
     get 'checkout'
+    post 'checkout'
     get 'search'
+    get 'mail' #####
     get 'checkoutupdate'
     post 'checkoutupdate'
+    get 'checkoutUserupdate'
+    post 'checkoutUserupdate'
   end
 
 end
