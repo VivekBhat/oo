@@ -11,6 +11,7 @@ For accessing the project for the first time,
 
 There are two options:
 1) Sign up as a library member.
+
 2) Log in as the superadmin. 
 
 Superuser details:
@@ -22,6 +23,7 @@ Superuser details:
 	Password:  123456
 	
 => The password of the superadmin as well as the other admins can be updated. 
+
 => The updation of the superadmin details can be done through the Update Profile Link in the menu.  
 
 
