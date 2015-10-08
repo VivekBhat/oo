@@ -93,6 +93,14 @@ While testing the application, the steps that should be followed to create a new
 
 	Click on the checkout link.
 	
+**(G) View checkout history:
+
+There are two scenarios here:
+	
+	A admin can view the complete checkout history of the system.
+	
+	
+	
 Subsquent Steps/ Bugs:
 
 1) The email field in checkout and return on behalf of a user will work if we put different email ids. 
