@@ -1,6 +1,4 @@
 
-
-
 The Libsys is a library management system. It is a portal to manage and benefit all the users of the library. It makes things very transparent and easy for all the types of the users. 
 
 How to use the library management system.  
@@ -15,7 +13,8 @@ Username:  superadmin
 Email:  superadmin@ncsu.edu
 Password:  123456
 
-The application is hosted at: libsys.herokuapp.com
+The application is  currently hosted at: https://frozen-badlands-7977.herokuapp.com
+The old application is hosted at: libsys.herokuapp.com
 
 
 
