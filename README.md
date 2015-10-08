@@ -141,7 +141,13 @@ The admin can search for a book using various parameters. Search in a checkout h
 
 	The admin can delete an available book. 
 	
-	The admin cannot delete an unchecked book. 
+	The admin cannot delete a checked out book. 
+	
+**(B) Admin deletes a library member:**
+
+	Admin cannot delete a member who has a book checked out.
+	
+	Admin can delete a user who has no book checked out. The deleted user's checkout history will not be deleted from the checkout history table.
 	
 
 	
