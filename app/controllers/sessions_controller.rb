@@ -1,10 +1,9 @@
 class SessionsController < ApplicationController
   def new
   end
-  
 
-
-   def create
+ #create and destroy methods are used when a user logs in and logs out respectively
+  def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password]) 
     session[:user_usertype] = user.usertype
