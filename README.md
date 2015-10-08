@@ -135,6 +135,15 @@ The admin can search for a book using various parameters. Search in a checkout h
 
 	Click on checkout history in the left menu. 
 	
+**3) Special cases:**
+
+**(A) Books which can be deleted by admin:**
+
+	The admin can delete an available book. 
+	
+	The admin cannot delete an unchecked book. 
+	
+
 	
 Subsquent Steps/ Bugs:
 
