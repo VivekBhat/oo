@@ -105,11 +105,15 @@ There are two scenarios here:
 	
 The admin can search for a book using various parameters. Search in a checkout history does not work for ISBN. 
 
-
+**2) Library Member Functions:**
 	
 Subsquent Steps/ Bugs:
 
 1) The email field in checkout and return on behalf of a user will work if we put different email ids. 
+
+2) The add a book form shows checkout as an option.
+
+3) Search in a checkout history does not work for ISBN.
 
 	
 	
