@@ -1,7 +1,7 @@
 <h2> Book checkout and return </h2>
 <% if session[:user_usertype] == 2 %>
 <%= form_for :book, :url => { :action => "checkoutupdate" }, :html => { :method => :post }  do |f| %>
-
+<%#= The text fields for the form %>
  <p>
     <%= f.label :ISBN %><br>
     <%= f.text_field :ISBN, :disabled=>true %>
@@ -20,6 +20,7 @@
     <%= f.text_field :title, :disabled=>true %>
   </p>
    <p>
+   	 <%#= for user to select if the book is available %>
     <%= f.label :"Action" %><br>
       <% if @book.status == "Checked Out" %>
       <%= f.select :status, [['Return','Available']] %>
