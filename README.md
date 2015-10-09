@@ -18,6 +18,8 @@ There are two options:
 
 => We have currently set the minimum password length as 2. 
 
+=> After creation, you will be auto logged in. Please log out once and re-login to enable all library member functions. 
+
 
 **2) Log in as the superadmin.**
 
