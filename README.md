@@ -191,7 +191,7 @@ Subsquent Steps/ Bugs:
 
 1) The email field in checkout and return on behalf of a user will work if we put different email ids. 
 
-2) The add a book fwill show 'Checke out' in the dropbox too when logged in as an admin, but the default value is set as 'Available'. The user is requested to not change it while testing addition of new book.
+2) The add a book will also show 'Check out' in the drop down when logged in as an admin, but the default value is set as 'Available'. The user is requested to not change it while testing addition of new book.
 
 3) Search in a checkout history does not work for ISBN. It worked perfectly but due to some Postgres deployment issue on Heroku, it is not working as of now.
 
