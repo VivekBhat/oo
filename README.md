@@ -191,7 +191,7 @@ Subsquent Steps/ Bugs:
 
 2) The add a book form shows checkout as an option.
 
-3) Search in a checkout history does not work for ISBN.
+3) Search in a checkout history does not work for ISBN. It worked perfectly but due to some Postgres deployment issue on Heroku, it is not working as of now.
 
 Team Members: mrohatg2@ncsu.edu, ssharm17@ncsu.edu, sgulati2@ncsu.edu
 
