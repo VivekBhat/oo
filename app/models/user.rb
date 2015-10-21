@@ -16,5 +16,5 @@ has_one:book, dependent: :destroy
 
   has_secure_password
 
-  validates :password, presence: true, length: { minimum: 2 }
+  validates :password, presence: true, length: { minimum: 6 }
 end
